@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main id="app" class="bg-zinc-700 text-white">
+      <div class="container mx-auto">
+        <div class="content flex min-h-screen items-center justify-center">
+          <!-- Card -->
+          <div class="rounded-2xl bg-zinc-800 p-2">
+            <!-- Flex Container -->
+            <div class="flex flex-col overflow-hidden rounded-2xl md:flex-row">
+              <img
+                src="./src/assets/image.jpg"
+                alt="green beans"
+                class="h-64 transform object-cover duration-300 hover:scale-105"
+              />
+              <!-- Content -->
+              <div class="p-6 text-center md:p-12 md:text-left">
+                <h2 class="font-serif text-xl font-medium">
+                  Get diet and fitness tips in your inbox
+                </h2>
+                <p class="my-4 max-w-sm text-xs leading-5 tracking-wide">
+                  Eat better and exercise more with our weekly tips and advice.
+                  <br />
+                  Sign up for our newsletter and get 10% off your first order.
+                </p>
+                <form class="flex flex-col gap-4 md:flex-row mt-6">
+                  <input
+                    class="rounded-md border border-zinc-600 bg-zinc-800 py-2 px-4 text-center text-white placeholder:text-center placeholder:text-xs focus:outline-none md:text-left placeholder:md:text-left"
+                    type="email"
+                    placeholder="Enter your email address"
+                  />
+                  <button
+                    class="rounded-md bg-lime-500 px-4 py-2 text-zinc-900 transition-colors duration-150 hover:bg-lime-700 hover:text-white"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

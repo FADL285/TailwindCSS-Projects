@@ -6,7 +6,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        emailSubscribe: resolve(__dirname, "email-subscribe.html")
+        emailSubscribe: resolve(__dirname, "email-subscribe.html"),
+        pricingCards: resolve(__dirname, "pricing-cards.html")
       }
     }
   }

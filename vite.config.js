@@ -7,7 +7,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         emailSubscribe: resolve(__dirname, "email-subscribe.html"),
-        pricingCards: resolve(__dirname, "pricing-cards.html")
+        pricingCards: resolve(__dirname, "pricing-cards.html"),
+        productModal: resolve(__dirname, "product-modal.html")
       }
     }
   }

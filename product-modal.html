@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Subscribe Card</title>
+  </head>
+  <body>
+    <main id="app" class="bg-gray-100">
+      <div class="flex min-h-screen w-full items-center justify-center p-6">
+        <div
+          class="flex flex-col gap-6 overflow-hidden rounded-lg bg-white p-10 text-center shadow-xl md:flex-row md:text-start"
+        >
+          <figure>
+            <img
+              src="./src/assets/images/headphone.png"
+              alt="headphone image"
+              class="m-auto w-64 transition-transform duration-200 hover:scale-105"
+            />
+          </figure>
+          <div id="prod-info">
+            <span class="rounded-xl bg-black px-2 py-1 text-xs text-white">
+              Free shipping
+            </span>
+            <h1 class="mt-2 mb-8 text-3xl">
+              Razer Kraken Kitty Edt Gaming Headset Quartz
+            </h1>
+            <!-- PRICE -->
+            <p class="mb-2">
+              <span class="block line-through">$700</span>
+              <span class="text-4xl font-bold">$599</span>
+            </p>
+            <p class="text-xs text-gray-500">
+              The Offer is valid until May 28 or as long as stock lasts!
+            </p>
+            <!-- Add to cart Button -->
+            <div class="group mt-6">
+              <button
+                class="w-full rounded-md border-b-8 border-b-blue-600 bg-blue-600 text-white transition-all duration-150 group-hover:border-t-8 group-hover:border-b-0 group-hover:border-t-blue-600 group-hover:shadow-lg"
+              >
+                <div
+                  class="rounded-md bg-blue-500 px-8 py-3 duration-150 group-hover:bg-blue-600"
+                >
+                  Add to cart
+                </div>
+              </button>
+            </div>
+            <!-- Stock -->
+            <p
+              class="my-4 text-sm before:mr-4 before:inline-block before:h-3 before:w-3 before:animate-pulse before:rounded-full before:bg-green-400 before:content-['']"
+            >
+              50+ pcs. in stock.
+            </p>
+            <div id="actions" class="flex flex-col gap-4 md:flex-row">
+              <button
+                class="flex items-center justify-center gap-2 rounded-lg border-2 border-gray-300 py-3 px-5 shadow-sm transition-transform duration-150 hover:-translate-y-0.5 hover:bg-opacity-25 hover:shadow-lg"
+              >
+                <img
+                  src="./src/assets/images/weight.png"
+                  alt="Weight Icon"
+                  class="w-8"
+                />
+                Add to Cart
+              </button>
+              <button
+                class="flex items-center justify-center gap-2 rounded-lg border-2 border-gray-300 py-3 px-5 shadow-sm transition-transform duration-150 hover:-translate-y-0.5 hover:bg-opacity-25 hover:shadow-lg"
+              >
+                <img
+                  src="./src/assets/images/heart.png"
+                  alt="Heart Icon"
+                  class="w-8"
+                />
+                Add to wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

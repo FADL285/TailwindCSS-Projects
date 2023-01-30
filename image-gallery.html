@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <main
+      id="app"
+      class="flex min-h-screen items-center justify-center bg-cyan-50 p-3"
+    >
+      <!-- Gallery Card container -->
+      <div
+        class="space-y-10 rounded-2xl bg-white p-8 shadow-2xl sm:p-16 md:p-28"
+      >
+        <!-- Navigation Menu -->
+        <nav class="text-center">
+          <ul class="flex flex-col justify-end gap-4 sm:flex-row">
+            <li>
+              <a
+                href="#"
+                class="relative before:absolute before:-bottom-1 before:h-[1.125px] before:w-full before:scale-x-0 before:bg-black before:transition hover:before:scale-x-75"
+              >
+                Vector
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative before:absolute before:-bottom-1 before:h-[1.125px] before:w-full before:scale-x-0 before:bg-black before:transition hover:before:scale-x-75"
+              >
+                Illustrations
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative before:absolute before:-bottom-1 before:h-[1.125px] before:w-full before:scale-x-0 before:bg-black before:transition hover:before:scale-x-75"
+              >
+                Images
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative before:absolute before:-bottom-1 before:h-[1.125px] before:w-full before:scale-x-0 before:bg-black before:transition hover:before:scale-x-75"
+              >
+                Icons
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Search Container -->
+        <!-- Search Container -->
+        <div class="flex flex-col justify-between gap-5 sm:flex-row">
+          <!-- Input and SVG Container -->
+          <form class="flex justify-between border-b">
+            <input
+              type="search"
+              class="ml-6 border-none placeholder:font-thin focus:outline-none sm:w-3/5 md:w-72"
+              placeholder="Search"
+            />
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 text-gray-300 duration-200 hover:scale-110"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+              </svg>
+            </button>
+          </form>
+
+          <!-- Upload Button -->
+          <button
+            class="rounded-md border border-black bg-black py-2 px-14 text-lg font-normal text-white shadow-2xl duration-200 hover:bg-white hover:text-black"
+          >
+            Upload
+          </button>
+        </div>
+
+        <!-- Gallery Container -->
+        <div class="grid gap-4 md:grid-cols-3 sm:grid-cols-2">
+          <!-- Image -->
+          <div class="group relative">
+            <img
+              src="./src/assets/images/gallery/image1.jpg"
+              alt="Image 1 Desc"
+              class="w-72"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black/40 px-4 py-2 text-white opacity-0 duration-500 group-hover:opacity-100"
+            >
+              <div class="flex w-full justify-between">
+                <div class="font-normal">
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 shares</p>
+                </div>
+                <div class="flex items-center">
+                  <img
+                    src="./src/assets/images/gallery/bookmark.svg"
+                    alt="Bookmark icon"
+                    class="cursor-pointer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="group relative">
+            <img
+              src="./src/assets/images/gallery/image2.jpg"
+              alt="Image 1 Desc"
+              class="w-72"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black/40 px-4 py-2 text-white opacity-0 duration-500 group-hover:opacity-100"
+            >
+              <div class="flex w-full justify-between">
+                <div class="font-normal">
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 shares</p>
+                </div>
+                <div class="flex items-center">
+                  <img
+                    src="./src/assets/images/gallery/bookmark.svg"
+                    alt="Bookmark icon"
+                    class="cursor-pointer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="group relative">
+            <img
+              src="./src/assets/images/gallery/image3.jpg"
+              alt="Image 1 Desc"
+              class="w-72"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black/40 px-4 py-2 text-white opacity-0 duration-500 group-hover:opacity-100"
+            >
+              <div class="flex w-full justify-between">
+                <div class="font-normal">
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 shares</p>
+                </div>
+                <div class="flex items-center">
+                  <img
+                    src="./src/assets/images/gallery/bookmark.svg"
+                    alt="Bookmark icon"
+                    class="cursor-pointer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="group relative">
+            <img
+              src="./src/assets/images/gallery/image4.jpg"
+              alt="Image 1 Desc"
+              class="w-72"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black/40 px-4 py-2 text-white opacity-0 duration-500 group-hover:opacity-100"
+            >
+              <div class="flex w-full justify-between">
+                <div class="font-normal">
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 shares</p>
+                </div>
+                <div class="flex items-center">
+                  <img
+                    src="./src/assets/images/gallery/bookmark.svg"
+                    alt="Bookmark icon"
+                    class="cursor-pointer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="group relative">
+            <img
+              src="./src/assets/images/gallery/image5.jpg"
+              alt="Image 1 Desc"
+              class="w-72"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black/40 px-4 py-2 text-white opacity-0 duration-500 group-hover:opacity-100"
+            >
+              <div class="flex w-full justify-between">
+                <div class="font-normal">
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 shares</p>
+                </div>
+                <div class="flex items-center">
+                  <img
+                    src="./src/assets/images/gallery/bookmark.svg"
+                    alt="Bookmark icon"
+                    class="cursor-pointer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="group relative">
+            <img
+              src="./src/assets/images/gallery/image6.jpg"
+              alt="Image 1 Desc"
+              class="w-72"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black/40 px-4 py-2 text-white opacity-0 duration-500 group-hover:opacity-100"
+            >
+              <div class="flex w-full justify-between">
+                <div class="font-normal">
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 shares</p>
+                </div>
+                <div class="flex items-center">
+                  <img
+                    src="./src/assets/images/gallery/bookmark.svg"
+                    alt="Bookmark icon"
+                    class="cursor-pointer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

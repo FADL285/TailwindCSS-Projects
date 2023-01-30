@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Modal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&family=Rokkitt:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main
+      id="app"
+      class="grid min-h-screen place-content-center bg-rose-50 p-6 font-mulish md:p-12"
+    >
+      <!-- Card Container -->
+      <div
+        class="relative flex flex-col rounded-2xl bg-white shadow-2xl md:flex-row"
+      >
+        <!-- Left Side -->
+        <div class="px-8 py-12 md:p-16 flex-1">
+          <h2 class="mb-5 font-rokkitt text-4xl font-bold">Log In</h2>
+          <p class="mb-12 max-w-sm font-light text-gray-600">
+            Log in to your account ta upload or download pictures, videos or
+            music.
+          </p>
+          <form class="border-b border-b-gray-300 pb-12">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              class="w-full rounded-md border border-gray-300 px-6 py-4 outline-none placeholder:font-mulish placeholder:font-light focus:border-cyan-700 focus:ring-1 focus:ring-cyan-700"
+            />
+
+            <div
+              class="mt-2 flex flex-col justify-between gap-4 sm:mt-6 sm:flex-row sm:items-center"
+            >
+              <p>
+                <a
+                  href="#"
+                  class="font-light text-cyan-700 hover:underline focus:underline focus:outline-none"
+                  >Forget password?</a
+                >
+              </p>
+              <button
+                class="flex w-full items-center justify-center gap-3 rounded-lg bg-cyan-700 px-8 py-4 text-white shadow-sm shadow-cyan-100 transition hover:-translate-y-0.5 hover:bg-opacity-90 hover:shadow-lg focus:outline-none focus:ring-1 focus:ring-cyan-700 sm:w-auto"
+              >
+                Next
+                <svg
+                  class="w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <p class="py-6 text-center text-sm font-light text-gray-500">
+            Or log in with
+          </p>
+          <div class="buttons-group flex flex-col gap-4 sm:flex-row">
+            <button
+              class="flex w-full items-center justify-center gap-4 rounded border border-gray-300 py-2 shadow hover:-translate-y-0.5 hover:shadow-lg"
+            >
+              <img
+                src="./src/assets/images/login/facebook.png"
+                alt="facebook icon"
+                class="w-9"
+              />
+              <span>Facebook</span>
+            </button>
+            <button
+              class="flex w-full items-center justify-center gap-4 rounded border border-gray-300 py-2 shadow hover:-translate-y-0.5 hover:shadow-lg"
+            >
+              <img
+                src="./src/assets/images/login/google.png"
+                alt="google icon"
+                class="w-9"
+              />
+              <span>Google</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="hidden md:block w-2/5">
+          <img
+            src="./src/assets/images/login/cover-image.jpg"
+            alt="Water"
+            class="w-full h-full object-cover max-w-[430px]"
+          />
+        </div>
+
+        <!-- Close Button -->
+        <div
+          class="group absolute top-2 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 transition duration-150 hover:-translate-y-0.5 hover:cursor-pointer md:top-4 md:bg-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-black group-hover:text-gray-600"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

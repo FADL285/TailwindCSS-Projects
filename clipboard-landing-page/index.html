@@ -19,7 +19,7 @@
       class="bg-hero-mobile bg-cover bg-no-repeat md:bg-hero-desktop"
     >
       <div class="md:container">
-        <div id="hero-content" class="section-container py-16">
+        <div id="hero-content" class="section-container pt-16 pb-14">
           <img src="./src/assets/logo.svg" alt="Logo" class="mx-auto my-16" />
           <h1 class="primary-heading">A history of everything you copy</h1>
           <p class="text-grayishBlue sm:text-xl md:text-2xl">
@@ -53,11 +53,11 @@
       </section>
 
       <!-- Features Section -->
-      <section id="features" class="mt-10">
+      <section id="features" class="mt-10 md:pb-32">
         <div class="md:container">
-          <div class="section-container-lg py-8">
+          <div class="px-10 py-8 text-center">
             <div class="relative flex flex-col gap-x-32 md:flex-row">
-              <!-- imgage -->
+              <!-- image -->
               <div class="md:w-1/2">
                 <img
                   src="./src/assets/images/image-computer.png"
@@ -107,7 +107,8 @@
                   <p
                     class="mx-auto max-w-md px-2 text-grayishBlue sm:px-4 md:px-0"
                   >
-                    Instantly saves and syncs snippets across all your devices.
+                    Retrieve ang snippets from the first moment vou started
+                    using the app.
                   </p>
                 </div>
               </div>
@@ -115,7 +116,206 @@
           </div>
         </div>
       </section>
+
+      <!--  Access Section -->
+      <section id="access" class="mt-24 mb-20">
+        <div class="md:container">
+          <div class="section-container pt-8">
+            <h2 class="secondary-heading">Access Clipboard anywhere</h2>
+            <p class="mb-14 leading-6 text-grayishBlue md:text-xl">
+              Whether you're on the go, or at your computer, you can access all
+              your Clipboard snippets in a few simple clicks.
+            </p>
+
+            <img
+              src="./src/assets/images/image-devices.png"
+              alt="devices image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Supercharge Section -->
+      <section id="supercharge" class="mb-20">
+        <div class="md:container">
+          <div class="section-container pt-8">
+            <h2 class="secondary-heading">Supercharge your workflow</h2>
+            <p class="mb-14 leading-6 text-grayishBlue md:text-xl">
+              We've got the tools to boost your productivity.
+            </p>
+          </div>
+
+          <!-- Items Container -->
+          <div
+            class="flex flex-col items-center justify-between gap-y-16 gap-x-12 px-4 text-center sm:px-0 md:flex-row"
+          >
+            <!-- Item -->
+            <div class="flex flex-col items-center gap-4">
+              <!-- icon -->
+              <img
+                src="./src/assets/images/icon-blacklist.svg"
+                alt="icon-blacklist"
+              />
+              <!-- title -->
+              <h5 class="text-2xl font-bold capitalize text-darkGrayishBlue">
+                Create blacklists
+              </h5>
+              <!-- description -->
+              <p class="max-w-md text-center text-grayishBlue">
+                Easily search your snippets bu content, category, web address,
+                application, and more.
+              </p>
+            </div>
+            <!-- Item -->
+            <div class="flex flex-col items-center gap-4">
+              <!-- icon -->
+              <img src="./src/assets/images/icon-text.svg" alt="icon-text" />
+              <!-- title -->
+              <h5 class="text-2xl font-bold capitalize text-darkGrayishBlue">
+                Plain text snippets
+              </h5>
+              <!-- description -->
+              <p class="max-w-md text-center text-grayishBlue">
+                Remove unwanted formatting from copied text for a consistent
+                look.
+              </p>
+            </div>
+            <!-- Item -->
+            <div class="flex flex-col items-center gap-4">
+              <!-- icon -->
+              <img
+                src="./src/assets/images/icon-preview.svg"
+                alt="icon-preview"
+              />
+              <!-- title -->
+              <h5 class="text-2xl font-bold capitalize text-darkGrayishBlue">
+                Sneak preview
+              </h5>
+              <!-- description -->
+              <p class="max-w-md text-center text-grayishBlue">
+                Quick preview of all snippets on your Clipboard for easy access.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners Section -->
+      <section id="partners" class="mb-20">
+        <div class="md:container">
+          <!-- Items Container -->
+          <div
+            class="flex-w flex flex-col items-center justify-between gap-y-16 gap-x-12 px-4 text-center sm:px-0 md:flex-row lg:gap-x-16"
+          >
+            <!-- Item -->
+            <figure class="">
+              <!-- icon -->
+              <img
+                src="./src/assets/images/logo-google.png"
+                alt="Google logo"
+              />
+            </figure>
+            <!-- Item -->
+            <figure class="">
+              <!-- icon -->
+              <img src="./src/assets/images/logo-ibm.png" alt="IBM logo" />
+            </figure>
+            <!-- Item -->
+            <figure class="">
+              <!-- icon -->
+              <img
+                src="./src/assets/images/logo-microsoft.png"
+                alt="Microsoft Logo"
+              />
+            </figure>
+            <figure class="">
+              <!-- icon -->
+              <img src="./src/assets/images/logo-hp.png" alt="HP Logo" />
+            </figure>
+            <figure class="">
+              <!-- icon -->
+              <img
+                src="./src/assets/images/logo-vector-graphics.png"
+                alt="Vector Graphics Logo"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!--  CTA Section -->
+      <section id="cta" class="mt-24 mb-20">
+        <div class="md:container">
+          <div class="section-container pt-8">
+            <h2 class="secondary-heading">Clipboard for iOS and Mac OS</h2>
+            <p class="leading-6 text-grayishBlue md:text-xl">
+              Available for free on the App Store. Download for Mac or iOS, sync
+              with iCloud and you're ready to start adding to your clipboard.
+            </p>
+            <div class="download-btns-container mt-10">
+              <button class="rounded-btn border-strongCyan bg-strongCyan">
+                Download for IOS
+              </button>
+              <button class="rounded-btn border-lightBlue bg-lightBlue">
+                Download for Mac
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="bg-gray-50 py-14 md:py-6">
+      <div class="md:container">
+        <div
+          class="flex flex-col items-center justify-between gap-10 px-8 md:flex-row md:px-0"
+        >
+          <!-- Logo -->
+          <img src="./src/assets/logo.svg" alt="Logo" class="w-16" />
+          <!-- Nav -->
+          <nav
+            class="flex flex-col flex-wrap items-center justify-between gap-y-4 gap-x-8 sm:flex-row"
+          >
+            <a href="#" class="duration-200 hover:text-strongCyan">FAQs</a>
+            <a href="#" class="duration-200 hover:text-strongCyan"
+              >Privacy Policy</a
+            >
+            <a href="#" class="duration-200 hover:text-strongCyan"
+              >Install Guide</a
+            >
+            <a href="#" class="duration-200 hover:text-strongCyan"
+              >Contact Us</a
+            >
+            <a href="#" class="duration-200 hover:text-strongCyan">Press Kit</a>
+          </nav>
+
+          <!-- Social Icon -->
+          <div class="flex items-center justify-between gap-x-4">
+            <a href="#">
+              <img
+                src="./src/assets/images/icon-facebook.svg"
+                alt="Facebook"
+                class="ficon duration-200"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./src/assets/images/icon-twitter.svg"
+                alt="Twitter"
+                class="ficon duration-200"
+              />
+            </a>
+
+            <a href="#">
+              <img
+                src="./src/assets/images/icon-instagram.svg"
+                alt="Instagram"
+                class="ficon duration-200"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

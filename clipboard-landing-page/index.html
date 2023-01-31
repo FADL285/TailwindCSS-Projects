@@ -5,9 +5,117 @@
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clipboard Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app"></div>
+    <!-- Hero Section -->
+    <header
+      id="hero"
+      class="bg-hero-mobile bg-cover bg-no-repeat md:bg-hero-desktop"
+    >
+      <div class="md:container">
+        <div id="hero-content" class="section-container py-16">
+          <img src="./src/assets/logo.svg" alt="Logo" class="mx-auto my-16" />
+          <h1 class="primary-heading">A history of everything you copy</h1>
+          <p class="text-grayishBlue sm:text-xl md:text-2xl">
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+          <div class="download-btns-container mt-10">
+            <button class="rounded-btn border-strongCyan bg-strongCyan">
+              Download for IOS
+            </button>
+            <button class="rounded-btn border-lightBlue bg-lightBlue">
+              Download for Mac
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Snippets Section -->
+      <section id="snippets" class="mt-20">
+        <div class="md:container">
+          <div class="section-container pt-8">
+            <h2 class="secondary-heading">Keep track of your snippets</h2>
+            <p class="leading-6 text-grayishBlue md:text-xl">
+              Clipboard instantly stores anu item gou copg in the cloud, meaning
+              gou can access gour snippets immediately on all your devices. Our
+              Mac and iOS apps will help gou organize everything.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="mt-10">
+        <div class="md:container">
+          <div class="section-container-lg py-8">
+            <div class="relative flex flex-col gap-x-32 md:flex-row">
+              <!-- imgage -->
+              <div class="md:w-1/2">
+                <img
+                  src="./src/assets/images/image-computer.png"
+                  alt="Computer"
+                  class="top-0 right-[50%] md:absolute"
+                />
+              </div>
+
+              <!-- Items Container -->
+              <div class="mt-16 space-y-12 md:text-left">
+                <!-- Item -->
+                <div>
+                  <h5
+                    class="mb-2 text-2xl font-bold capitalize text-darkGrayishBlue"
+                  >
+                    Quick Search
+                  </h5>
+                  <p
+                    class="mx-auto max-w-md px-2 text-grayishBlue sm:px-4 md:px-0"
+                  >
+                    Easily search your snippets by content, category, web
+                    address, application, and more.
+                  </p>
+                </div>
+
+                <!-- Item -->
+                <div>
+                  <h5
+                    class="mb-2 text-2xl font-bold capitalize text-darkGrayishBlue"
+                  >
+                    iCloud Sync
+                  </h5>
+                  <p
+                    class="mx-auto max-w-md px-2 text-grayishBlue sm:px-4 md:px-0"
+                  >
+                    Instantly saves and syncs snippets across all your devices.
+                  </p>
+                </div>
+
+                <!-- Item -->
+                <div>
+                  <h5
+                    class="mb-2 text-2xl font-bold capitalize text-darkGrayishBlue"
+                  >
+                    Complete History
+                  </h5>
+                  <p
+                    class="mx-auto max-w-md px-2 text-grayishBlue sm:px-4 md:px-0"
+                  >
+                    Instantly saves and syncs snippets across all your devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

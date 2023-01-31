@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .section-container {
+    @apply m-auto max-w-4xl px-10 text-center;
+  }
+
+  .section-container-lg {
+    @apply m-auto max-w-6xl px-10 text-center;
+  }
+
+  .rounded-btn {
+    @apply rounded-full border py-4 px-8 text-white shadow-xl duration-200 hover:opacity-90;
+  }
+
+  .primary-heading {
+    @apply mb-4 text-[2.125rem] font-bold text-darkGrayishBlue sm:text-4xl md:text-5xl;
+  }
+
+  .secondary-heading {
+    @apply mb-4 text-2xl font-bold text-darkGrayishBlue sm:text-3xl md:text-4xl;
+  }
+
+  .download-btns-container {
+    @apply flex flex-col justify-center gap-6 sm:flex-row;
+  }
+}
